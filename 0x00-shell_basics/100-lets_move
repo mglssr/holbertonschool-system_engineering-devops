@@ -1,2 +1,2 @@
 #!/bin/bash
-ls grep^[[:upper]] cp /tmp/u
+mv [A-Z]* /tmp/u
