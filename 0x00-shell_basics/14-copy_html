@@ -1,2 +1,2 @@
 #!/bin/bash
-find /. *html cp/..
+find /. *html -exec cp --ignore-existing src dst
