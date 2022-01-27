@@ -1,2 +1,2 @@
 #!/bin/bash
-chmode 775 
+find -type d xargs chmode 775 
