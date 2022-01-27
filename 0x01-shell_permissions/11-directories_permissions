@@ -1,2 +1,2 @@
 #!/bin/bash
-chmode 775 --exclude-from=FILE
+chmode 775 
