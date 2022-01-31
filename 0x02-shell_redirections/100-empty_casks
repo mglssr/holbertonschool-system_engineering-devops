@@ -1,2 +1,2 @@
 #!/bin/bash
-find . .. -empty | ls -laR 
+find path/to/dir -empty | ls -laR 
