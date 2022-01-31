@@ -1,2 +1,2 @@
 #!/bin/bash
-find path/to/dir -empty | ls -laR 
+find . -empty -printf "%f\n" 
