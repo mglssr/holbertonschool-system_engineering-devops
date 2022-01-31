@@ -1,2 +1,2 @@
 #!/bin/bash
-string.replace(A,Z) string.replace(c, e)
+echo "$string" |tr 'A' 'Z'| tr 'c' 'e'
