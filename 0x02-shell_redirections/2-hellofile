@@ -1,2 +1,2 @@
-#!/bin/bash
-fmt /etc/passwd
+i#!/bin/bash
+view /etc/passwd
