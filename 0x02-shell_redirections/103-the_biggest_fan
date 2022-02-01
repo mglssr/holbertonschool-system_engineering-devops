@@ -1,2 +1,2 @@
 #!/bin/bash
-cat foo.log | grep request_to_file_foo | awk '{print $1}' |  sort -n | uniq -c | sort -rn | head
+tail -n +2 | cut -f1 | sort | umiq -c | sport -nr | head -11 | tr -s '' | cut -d' -f3
