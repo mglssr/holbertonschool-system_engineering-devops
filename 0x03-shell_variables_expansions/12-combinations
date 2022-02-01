@@ -1,2 +1,2 @@
 #!/bin/bash
-charset=({a..z} {a..z})
+charset=({a..z} {a..z}/oo) | echo head -10 | wc -l| 
