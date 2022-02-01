@@ -1,2 +1,2 @@
-!/bin/bash
+#!/bin/bash
 export PATH="$root/action:$PATH" echo $PATH
