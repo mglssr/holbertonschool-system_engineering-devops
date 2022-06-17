@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+# Bash script that displays the content of
+# the current directory in a list format
+ls=$(ls)
+for obj in $ls
+do
+  echo "$obj" | cut -d "-" -f 2
+done
