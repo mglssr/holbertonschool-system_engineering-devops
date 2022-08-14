@@ -1,0 +1,8 @@
+# Client configuration file
+Host 4392-web-01 
+	HostName 54.166.92.138
+	User ubuntu
+	PasswordAuthentication no
+	IdentityFile ~/.ssh/school
+	IdentityFile ~/.ssh/id_rsa.pub
+	Port 22
