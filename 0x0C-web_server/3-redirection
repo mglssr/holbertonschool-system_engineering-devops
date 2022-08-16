@@ -2,5 +2,5 @@
 #Configure your Nginx server so that /redirect_me is redirecting to another page
 
 new_string="listen 80 default_server;\nlisten [::]:80 default_server;\nreturn 301 https://www.youtube.com/watch?v=QH2-TGUlwu4;"
-sudo sed -i "s/listen 80 default_server;\nlisten [::]:80 default_server;/$newstring/" /etc/nginx/sites-enabled/default
+sudo sed -i "s/listen 80 default_server;\nlisten [::]:80 default_server;/$new_string/" /etc/nginx/sites-enabled/default
 sudo service nginx restart
