@@ -1,6 +1,8 @@
 #!/usr/bin/env bash
 #configure Nginx so that its HTTP response contains a custom header (on web-01 and web-02)
-sudo apt install nginx-extras
+sudo apt -y update
+sudo apt -y install nginx
+sudo apt -y install nginx-extras
 n_str="server_tokens off;\nmore_set_headers 'X-Served-By: $hostname';"
 sudo sed -i "s/#server_tokens off;/$n_str/" /etc/nginx/nginx.conf
 sudo service nginx restart
