@@ -2,8 +2,8 @@
 #configure Nginx so that its HTTP response contains a custom header (on web-01 and web-02)
 sudo apt -y update
 sudo apt -y install nginx
-sudo apt -y install nginx-extras
-sudo chmod 777 /etc/nginx/nginx.confs
-n_str="server_tokens off;\nmore_set_headers 'X-Served-By: $hostname';"
+sudo chmod 777 /etc/nginx/nginx.confs /var/www/html/index.nginx-debian.html /etc/nginx/sites-enabled/default
+echo "Hello World!" > /var/www/html/index.nginx-debian.html
+n_str="server_tokens off;\nadd_header X-Served-By: $hostname;"
 sudo sed -i "s/#server_tokens off;/$n_str/" /etc/nginx/nginx.conf
 sudo service nginx restart
