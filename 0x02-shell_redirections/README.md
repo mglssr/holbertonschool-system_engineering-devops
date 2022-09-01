@@ -1,2 +1,1 @@
-#!/bin/bash
-jejejejejjeej
+# 0x02-shell_redirections
