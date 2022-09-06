@@ -18,6 +18,6 @@ if __name__ == "__main__":
     filename = "{}.csv".format(user_id)
     with open(filename, "w", encoding="utf-8") as _file:
         for task in req_todo.json():
-            txt = '"{}", "{}", "{}", "{}"\n'\
+            txt = '"{}","{}","{}","{}"\n'\
                 .format((user_id), username, task['completed'], task['title'])
             _file.write(txt)
