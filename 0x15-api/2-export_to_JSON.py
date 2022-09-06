@@ -22,7 +22,7 @@ if __name__ == "__main__":
     with open(filename, "w", encoding="utf-8") as _file:
         for data in req_todo.json():
             dic = {"task": data['title'], "complet\
-                ed": data['completed'], "username": username}
+ed": data['completed'], "username": username}
             user_list.append(dic)
         user = {'{}'.format(user_id): user_list}
         _file.write(json.dumps(user))
