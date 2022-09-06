@@ -21,7 +21,8 @@ if __name__ == "__main__":
     user_list = []
     with open(filename, "w", encoding="utf-8") as _file:
         for data in req_todo.json():
-            dic = {"task": data['title'], "completed": data['completed'], "username": username}
+            dic = {"task": data['title'], "comple\
+ted": data['completed'], "username": username}
             user_list.append(dic)
         user = {user_id: user_list}
         _file.write(json.dumps(user))
