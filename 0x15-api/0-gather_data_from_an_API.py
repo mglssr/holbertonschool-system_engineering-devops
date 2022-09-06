@@ -25,4 +25,4 @@ if __name__ == "__main__":
 
     print("Employee {} is done with tasks({}/{}):".format(EN, NUMT, TOTAL_T))
     for t in lists:
-        print("\t{} ".format(t))
+        print("\t {}".format(t))
