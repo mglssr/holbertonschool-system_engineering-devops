@@ -8,8 +8,8 @@ if __name__ == "__main__":
     import sys
 
     user_id = sys.argv[1]
-    url_employee = f"https://jsonplaceholder.typicode.com/users/{user_id}"
-    url_todo = f"https://jsonplaceholder.typicode.com/todos?userId={user_id}"
+    url_employee = "https://jsonplaceholder.typicode.com/users/{}".format(user_id)
+    url_todo = "https://jsonplaceholder.typicode.com/todos?userId={}".format(user_id)
     req_employee = requests.get(url_employee)
     EN = req_employee.json().get('name')
     req_todo = requests.get(url_todo)
