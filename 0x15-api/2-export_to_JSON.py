@@ -24,5 +24,5 @@ if __name__ == "__main__":
             dic = {"task": data['title'], "complet\
 ed": data['completed'], "username": username}
             user_list.append(dic)
-        user = {'{}'.format(str(user_id)): user_list}
+        user = {user_id: user_list}
         _file.write(json.dumps(user))
